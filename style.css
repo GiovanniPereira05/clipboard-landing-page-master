@@ -209,8 +209,7 @@ footer img{
 
 .footer-text {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+
     padding: 20px;
     margin-left: 20px;
     gap: 20px;
