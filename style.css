@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+* {
+    --title-color: #4c545d;
+    --par-color: #b7c6d8;
+}
+
+
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: auto auto auto auto;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    background: url(images/bg-header-desktop.png) top/cover no-repeat;
+    padding-top: 100px;
+}
+
+img#logo {
+    display: flex;
+    margin: auto auto 50px auto;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+p {
+    color: var(--par-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1rem;
+    margin: auto auto 20px auto;
+    max-width: 425pt;
+    line-height: 1.5;
+}
+
+button {
+    border-radius: 100px;
+    width: 200px;
+    height: 45px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+    margin: 0px 20px 20px 0px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1rem;
+}
+
+button.mac {
+    background-color: #6474fc;
+}
+
+button.mac:hover {
+    background-color: #94a4fc;
+}
+
+button.ios {
+    background-color: #24bca4;
+}
+
+button.ios:hover {
+    background-color: #3cd4c4;
+}
+
+section.snippet {
+    margin: 100px 0px 100px 0px;
+}
+
+section.snippet h2 {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+
+section.snippet p {
+    margin: auto;
+    color: var(--par-color);
+    max-width: 475pt;
+    line-height: 1.5;
+}
+
+section.features {
+    display: flex;
+    justify-content: center;
+}
+
+div.features-text {
+    margin-left: 150px;
+    text-align: left;
+}
+
+div.features-text h3 {
+    font-size: 1.5rem;
+    margin: 20px 0px 10px;
+}
+
+div.features-text p {
+    max-width: 354px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+section.features img {
+    margin-left: -38vw;
+}
+
+section.devices div.devices-text {
+    margin-bottom: 100px;
+}
+
+section.devices h2 {
+    font-size: 1.5rem;
+    margin: 100px 0px 20px;
+}
+
+section.devices p {
+    margin: auto;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+
+section.workflow-title h2 {
+    font-size: 2rem;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+section.workflow-title p {
+    margin-bottom: 60px;
+}
+
+section.tools {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#tt1 img {
+    margin-bottom: 0px;
+    height: 52px;
+}
+
+section.tools img {
+    margin-bottom: 20px;
+}
+
+section.tools h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+div.tools-text {
+    max-width: 350px;
+    line-height: 1.8;
+}
+
+
+section.companies-container {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+div.companies img {
+    margin-top: 100px;
+    margin-right: 130px;
+}
+
+
+section.download h3 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+section.download p {
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4fc;
+    margin-top: 100px;
+}
+
+footer img{
+    width: 50px;
+    margin: 20px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+
+.footer-text p, .footer-text a{
+    color: var(--title-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.social img {
+    padding-left: 20px;
+    margin-top: 25px;
+    width: 25px;
+    height: 25px;
+}   
+
+@media screen and (max-width: 425px) {
+    header {
+        background: url(images/bg-header-mobile.png) top/cover no-repeat;
+    }
+
+    img.devices {
+
+        width: 200px;
+        height: 200px;
+    }
+
+    section.features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.features-text {
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    div.features-text h3 {
+        margin: 50px auto auto auto;
+
+    }
+
+    section.features img {
+        margin: auto;
+    }
+
+    .companies {
+        margin-left: 90px;
+    }
+}
